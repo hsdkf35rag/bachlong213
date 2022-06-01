@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Introduce.css">
+   
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+  <nav class="header1">
+    <a href="Home.html" class="navbar"><img src="img/Logo.png" alt="Trang chủ"></a>
+   
+    <form action="box-search" style="margin-left:15%;margin-right: 5%; display:flex; ">
+      <div class="search-icon" style="float: left; background: #fff;border-radius: 18px 0 0 18px;width: 40px;height: 30px;  margin: 15px 0 5px 0; cursor: pointer;">
+          <i style="
+          align-items: center; margin: 8px 5px 0 10px;" class='bx bx-search-alt-2'> </i>
+      </div>
+    
+      <input style="float:right;border-radius: 0 18px 18px 0; margin-top: 15px; height: 30px; width: 350px;border: none;" type="text" placeholder="Tìm kiếm...">
+          
+          
+  </form>
+    <!-- navbarsDefault  -->
+    <div class="collapse navbar-collapse" id="navbarsDefault">
+        <ul class="navbar-auto">
+            
+          <li class="nav-box">
+            <a class="nav-item" href="#">
+                <div class="nav-icon">
+                  <i class='bx bxs-phone' ></i>
+                </div>
+                <div class="nav-content">
+                  <p>Gọi mua hàng</p>
+                  <strong>090XXXXXXX</strong>
+                </div>
+              </a>
+            </li>
+            <li class="nav-box">
+              <a class="nav-item" href="#">
+                <div class="nav-icon">
+                  <i class='bx bxs-map' ></i>
+                </div>
+                <div class="nav-content">
+                  <p>Cửa hàng <br> gần bạn</p>
+                  
+                </div>
+              </a>
+            </li>
+            
+            <!-- dropdown-menu -->
+            <li class="nav-item-dropdown">
+              <a class="nav-link-dropdown-toggle" href="#" >
+                <div class="nav-icon" style="float: left;">
+                  <i class='bx bxs-mobile' ></i>
+                </div>
+                <div class="nav-content" style="float: right;">
+                  <p>Sản Phẩm</p>
+                  
+                </div>
+              </a>
+              <div class="dropdown-menu">
+
+                <a href="#">Iphone</a>
+                <a href="#">SamSung</a>
+                <a href="#">Oppo</a>
+                <a href="#">Xiomi</a>
+                <a href="#">Nokia</a>
+                <a href="#">Realmi</a>
+                <a href="#">Vsmart</a>
+              </div>
+            </li>
+          
+            <li class="nav-box">
+              <a class="nav-item" href="#">
+                <div class="nav-icon">
+                  <i class='bx bxs-cart' ></i>
+                </div>
+                <div class="nav-content">
+                  <p>Giỏ Hàng</p>
+                  
+                </div>
+              </a>
+            </li>
+            
+            <li class="nav-box">
+              <a class="nav-item" href="#">
+                <div class="nav-icon">
+                  <i class='bx bxs-user' ></i>
+                </div>
+                <div class="nav-content">
+                  <p>Tài khoản</p>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+          
+          
+            
+    </div>
+    
+  
+
+</nav>
+
+    <!--  jumbotron  -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          
+        </div>
+      </div>
+    <!--  jumbotron  -->
+      <section class="module parallax parallax-1" >
+        <div class="parallax-container">
+          <a href="#"><h1>THÀNH VIÊN</h1></a>
+        </div>
+      </section>
+
+      <section  class="module content">
+        <div class="parallax-container">
+          <h2>Giới Thiệu Thành Viên Tham Gia</h2>
+          <p>
+              <strong>Nguyễn Phạm Hoàng Khang - 2001206933</strong>
+              <br>
+              <strong>Phạm Hải Đăng - 2001203033</strong>
+          </p>
+         
+        </div>
+      </section>
+    <!--  jumbotron  -->
+      <section class="module parallax parallax-2" >
+        <div class="parallax-container">
+          <a href="#"><h1>DỰ ÁN</h1></a>
+        </div>
+      </section>
+
+      <section class="module content">
+        <div class="parallax-container">
+          <h2>Website Bán Thiết Bị Di Động</h2>
+          <p>Website giới thiệu thông tin sản phẩm và các dịch vụ về thiết bị di dộng.  
+
+        </p>
+        </div>
+      </section>
+  
+   
+
+    </section>
+    <script>
+      //parallax js
+$(document).ready(function(){
+  var $window = $(window);
+    $('section[data-type="background"]').each(function(){
+        var $bgobj = $(this); // assigning the object
+    
+        $(window).scroll(function() {
+            var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
+            
+            // Put together our final background position
+            var coords = '50% '+ yPos + 'px';
+
+            // Move the background
+            $bgobj.css({ backgroundPosition: coords });
+        }); 
+    });    
+});
+
+//menu transition js
+$(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+    	  if (scroll > 0) {
+	    $(".navbar").addClass("navbar-scroll");
+        }
+    	  else{
+		  $(".navbar").removeClass("navbar-scroll");  	
+	  }
+	  if (scroll > 200) {
+	    $(".navbar").addClass("bg-primary");
+	  }
+
+	  else{
+		  $(".navbar").removeClass("bg-primary");  	
+	  }
+  })
+})
+
+
+
+    </script>
+<!----------------content ---------------->
+
+
+
+
+
+
+<!----------------footer---------------------->
+<footer>
+
+  <div class="content">
+      <div class="top">
+          <div class="logo">
+              <a href="#"><img src="img/Logo.png" alt="Trang chủ"> </a>
+          </div>
+          <div class="media-icons">
+              <a href="#"><i class='bx bxl-facebook-circle' style='color:#2467b2'  ></i></a>
+              <a href="#"><i class='bx bxl-gmail' style='color:#ea4335'  ></i></a>
+              <a href="#"><i class='bx bxl-instagram' style='color:#e95950'  ></i></a>
+              <a href="#"><i class='bx bxl-youtube' style='color:#ea4335'  ></i></a>
+          </div>
+      </div>
+      <div class="link-boxes">
+          <ul class="box">
+              <li class="linkname">Payment Methods</li>
+              <li><a href="#">Sacombank</a></li>
+              <li><a href="#">Vietcombank</a></li>
+              <li><a href="#">Zalopay</a></li>
+              
+
+          </ul>
+          <ul class="box">
+              <li class="linkname">Contact</li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact us</a></li>
+       
+              
+
+          </ul>
+          <ul class="box">
+              <li class="linkname">Product</li>
+              <li><a href="#">Iphone</a></li>
+              <li><a href="#">Samsung</a></li>
+              <li><a href="#">Oppo</a></li>
+              <li><a href="#">Xiomi</a></li>
+      
+              
+
+          </ul>
+          <ul class="box">
+              <li class="linkname">Account</li>
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">My account</a></li>
+              <li><a href="#">Prefrences</a></li>
+             
+              
+
+          </ul>
+          <ul class="box">
+            <form action="box-search" style="margin-left:15%;margin-right: 5%; display:flex; ">
+              <div class="search-icon" style="float: left; background: #fff;border-radius: 18px 0 0 18px;width: 40px;height: 30px;  margin: 15px 0 5px 0; cursor: pointer;">
+                  <i style="
+                  align-items: center; margin: 8px 5px 0 10px;" class='bx bx-search-alt-2'> </i>
+              </div>
+            
+              <input style="float:right;border-radius: 0 18px 18px 0; margin-top: 15px; height: 30px; width: 350px;border: none;" type="text" placeholder="Tìm kiếm...">
+                  
+                  
+          </form>
+             
+              
+
+          </ul>
+      </div>
+  </div>
+</footer>    
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Register.css">
+    
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="header1">
+        <a href="Home.html" class="navbar"><img src="img/Logo.png" alt="Trang chủ"></a>
+       
+        <form action="box-search" style="margin-left:15%;margin-right: 5%; display:flex; ">
+          <div class="search-icon" style="float: left; background: #fff;border-radius: 18px 0 0 18px;width: 40px;height: 30px;  margin: 15px 0 5px 0; cursor: pointer;">
+              <i style="
+              align-items: center; margin: 8px 5px 0 10px;" class='bx bx-search-alt-2'> </i>
+          </div>
+        
+          <input style="float:right;border-radius: 0 18px 18px 0; margin-top: 15px; height: 30px; width: 350px;border: none;" type="text" placeholder="Tìm kiếm...">
+              
+              
+      </form>
+        <!-- navbarsDefault  -->
+        <div class="collapse navbar-collapse" id="navbarsDefault">
+            <ul class="navbar-auto">
+                
+              <li class="nav-box">
+                <a class="nav-item" href="#">
+                    <div class="nav-icon">
+                      <i class='bx bxs-phone' ></i>
+                    </div>
+                    <div class="nav-content">
+                      <p>Gọi mua hàng</p>
+                      <strong>090XXXXXXX</strong>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-box">
+                  <a class="nav-item" href="#">
+                    <div class="nav-icon">
+                      <i class='bx bxs-map' ></i>
+                    </div>
+                    <div class="nav-content">
+                      <p>Cửa hàng <br> gần bạn</p>
+                      
+                    </div>
+                  </a>
+                </li>
+                
+                <!-- dropdown-menu -->
+                <li class="nav-item-dropdown">
+                  <a class="nav-link-dropdown-toggle" href="#" >
+                    <div class="nav-icon" style="float: left;">
+                      <i class='bx bxs-mobile' ></i>
+                    </div>
+                    <div class="nav-content" style="float: right;">
+                      <p>Sản Phẩm</p>
+                      
+                    </div>
+                  </a>
+                  <div class="dropdown-menu">
+
+                    <a href="#">Iphone</a>
+                    <a href="#">SamSung</a>
+                    <a href="#">Oppo</a>
+                    <a href="#">Xiomi</a>
+                    <a href="#">Nokia</a>
+                    <a href="#">Realmi</a>
+                    <a href="#">Vsmart</a>
+                  </div>
+                </li>
+              
+                <li class="nav-box">
+                  <a class="nav-item" href="#">
+                    <div class="nav-icon">
+                      <i class='bx bxs-cart' ></i>
+                    </div>
+                    <div class="nav-content">
+                      <p>Giỏ Hàng</p>
+                      
+                    </div>
+                  </a>
+                </li>
+                
+                <li class="nav-box">
+                  <a class="nav-item" href="#">
+                    <div class="nav-icon">
+                      <i class='bx bxs-user' ></i>
+                    </div>
+                    <div class="nav-content">
+                      <p>Tài khoản</p>
+                    </div>
+                  </a>
+                </li>
+
+              </ul>
+              
+              
+                
+        </div>
+        
+      
+
+    </nav>
+
+<!-- LOGIN -->
+<div class="backgroud-aminition">
+    <div class="container-login">
+        <form>
+            <h3> REGISTER</h3>
+            <div class="inputBox">
+
+                <span>Username</span>
+                <div class="box">
+                    <div class="icon"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAQBJREFUOE+tlO0RATEURc9WgA50gAooQQeogA7QARWgAyVQATrQASpg7tisbCTZrPFm9te7OXkfN5vx58gSeQPgCRyr9FXAIbABmjnoDkyAfQgcA3aBU+BgDzj7cjHgCpgGgGtgVhd4APoBoGapuX5FrMIFMA8Al4DytYBaxBVoOKceQBvQgmoBJdZitkAnP3kBxqGFSFNlG1OBbZuoFVOAxtQGFDV3CKi2tBDNyhearZayc5M+oGY2ivb1SUqrl1OEC4xZJXRHyUI2UIO/JVbmylrGRjZQc9OP4JdQ22q/ZJtf2jWXF23bFcoe3veZULLevb5kYycw35IUYyfDJHwB8kolFUPA2YsAAAAASUVORK5CYII="/> </div>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="inputBox">
+                <span>Password</span>
+                <div class="box">
+                    <div class="icon">  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAPBJREFUOE/tlOENAUEQhb/rgArQgQ7QAR3ogA7QARUoARWgAx2gAx2QJ3NnbXZv7xISP2yyuR+z982btzuT8eGVVeT1gTtwTJ1PAafADGgY6AbMgVUMXAYcAhvgCiwNoAQtYARsQ9AyoNRod+2r/6X0ZOV36gDbwNlKkyp3Se0EaDqJinhMoS5hDyzMMxcoD+XrADj4Kr8OlEfKLoXy7mLbFSI7tOWlFKoKef1cvsLcn9Rzc+N6QoXPPlAZe3Vo9thVUVDhH1jJTQ2M3/ZwB2iQBG95DKwrFfo69DZ5Qq2nDsnnX4qtDlHHJIdDChSNPwA0cjQVv73XAgAAAABJRU5ErkJggg=="/></div>
+                    <input type="password">
+                </div>
+            </div>
+            <div class="inputBox">
+                
+                <span>NUMBER PHONE</span>
+                <div class="box">
+                    <div class="icon"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXhJREFUSEvtlu01Q0EQhp9UQAeoAB1QgahAVIAK0AEVoIJIBdFB6EAJVMB5HeusyezeuTd7Tn4w5+TPZnef+Xh35o5Yk43WxOUfnGd+AtwB98Bp65KUUi3YSQZrDvfAj8CRE+EFcNMqcgs+AOaVy5VyRb+y9QUL2ARuwXvAIhDODvAa2Ffc4tX4I3DhyvX2wM/AbgX+AkgLbwEHe0Vsn1J+uAlUF3oRj4Gp42ozaAmsdaVxw8D3AZWhiZU61xVwaQjXgNabWAm8/R1dHrWyoGdUEtUmcAbMIpmpjUUvaqX60IELqo6nPhBqMl3z2HtaWjvOGoiFplJUO1wX2Et5Ep8GhtKq0ZkitfVX1qSNJesC60C0jZZE547UCDjBn5wnFlX4LXCeb46CE1ze19ppyZF3QFr4sT7gdEh1k/e2wdSiXxLaELAA8l7wiAMPgL7fftlQcH6Jert+mlhb5n6pXv8NUnVUQGmfXkGqpwTpWouI+zr2tf/vgT8B2Ks8H3YQddoAAAAASUVORK5CYII="/> </div>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="inputBox">
+                
+                <span>ADDESS</span>
+                <div class="box">
+                    <div class="icon"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAbxJREFUSEvNlv0xBEEQxX8XASJABIgAGRABIkAEiIAMEAEiQASIgBCIgHpVs2r19Uz37l3V6T93Zvq9fv21ExZkkwXhMgZ4DdgANgvpV+AN+BgSxBDgQ+AMELBnInAF3GYIZIAFdNeLMPIrAvuRAhGw5HwEliM0c/4J7AIi4VoLWGAvDWkjLsr5FiASU9YCvgEOKt6fgadytgNsV+4p36qNNLDy+u7cV/XKkZVQKbkHVp03616+axGflwru+/kqsrvSlTMRWjLgp6Xa/3yuAUtGK98RIPlbdgJcmgtKi9KRAlZUlrkrmfHnpUi+VrLA3wPqwV5Nva1JrVawhTI2YhVkN15/Sf67HGvmHhsNlStF3apqDRw75S4AdUmquCSNnFhTu6i6bR+raq8rU25QHwtQzrX+PFO79SfXVLuUR24r6aw1MvfKVgpat3msRdERTEndXfIGSZbIAyDyrkVrUQPBG4MReDReU78+YySvStwxjiLu7nlLoxa1uxSy7eQ5be3n7n51/84CrLct8DRo1E41KT3ZU/L2HWZzbEnoL0RjVaYdHO3pqSDGAstR/4c+aq+5Ag8Gm4fUM4Hq8Q94wVEfAvaQEgAAAABJRU5ErkJggg=="/> </div>
+                    <input type="text">
+                </div>
+            </div>
+            <label>
+                <input type="checkbox"> Remember me
+            </label>
+            <div class="inputBox">
+                <div class="box">
+                    <input type="submit" value="REGISTER">
+                </div>
+            </div>
+            
+            
+
+            
+           
+            <a href="#" class="forgot">Login an account</a>
+        </form>
+        
+        </div>
+        <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+        </div>
+    
+</div>
+
+
+</body>
+</html>
